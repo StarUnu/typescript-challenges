@@ -1,1 +1,2 @@
-export type Last<T extends any[]> = any
+//descomposition
+export type Last<T> = T extends [...any,infer rest] ? rest: never;
